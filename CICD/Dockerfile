@@ -8,9 +8,9 @@ WORKDIR /app
 EXPOSE 3000
 
 # Build
-COPY *.json   /app
-COPY ./src    /app
-COPY ./public /app
+ADD *.json   /app
+ADD ./src    /app
+ADD ./public /app
 RUN ls -l /app
 
 RUN npm install
