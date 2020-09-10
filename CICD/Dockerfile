@@ -8,7 +8,11 @@ WORKDIR /app
 EXPOSE 3000
 
 # Build
-COPY . /app
+COPY *.json   /app
+COPY ./src    /app
+COPY ./public /app
+RUN ls -l /app
+
 RUN npm install
 RUN npm cache clean --force
 # RUN ls -al
