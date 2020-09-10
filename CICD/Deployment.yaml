@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: react-frontend
-        image: 847322629192.dkr.ecr.ap-northeast-2.amazonaws.com/react-frontend-dualcidr:1.0
+        image: 847322629192.dkr.ecr.ap-northeast-2.amazonaws.com/react-frontend:1.0
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
